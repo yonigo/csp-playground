@@ -2,7 +2,7 @@
 
 Small Express server to server different CSP headers.
 
-This server dynamically addes all folders under public/pages/<page-name> to the index file.
+This server dynamically addes all folders under public/pages/*page-name* to the index file.
 Then you can specify csp policy for each page
 
 ## usage
@@ -13,7 +13,7 @@ run npm start from project root
 
 ## Adding pages
 
-1. Create a new folder named <page-name> under public/pages
+1. Create a new folder named *page-name* under public/pages
 2. Add an index.html file in the new folder
 3. Add a csp.json file that describes the csp response header the server will reply with the request
 
