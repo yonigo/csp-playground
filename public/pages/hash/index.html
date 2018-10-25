@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+        <p>This is a hash protected html</p>
+        <p id="result"></p>
+
+        <script>
+            document.getElementById("result").innerHTML = "Script1 Works";
+        </script>
+        <script>
+                var p = document.createElement('p');
+                p.textContent = "Script2 Works"
+                document.getElementById("result").appendChild(p);
+        </script>
+    </body>
+</html>

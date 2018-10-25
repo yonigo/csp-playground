@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+        <p>This is a nonce protected html with dynamic content inside</p>
+        <p id="result"></p>
+
+        <script src="pages/nonce-dynamic/main.js" nonce="bm9uY2U="></script>
+        <script>
+            document.getElementById('result').append('Inline Script Works');
+            var childScript = document.createElement('script');
+            childScript.type = 'text/javascript';
+            childScript.appendChild(document.createTextNode(
+                "var p = document.createElement('p');" + 
+                "p.textContent = 'Inline Child Script Works';" +
+                "document.getElementById('result').appendChild(p);"
+            ));
+
+            document.head.appendChild(childScript);
+        </script>
+         <script src="https://cdn.walkme.com/users/4c717477fef746b7ba764556d1f86189/walkme_4c717477fef746b7ba764556d1f86189_https.js"></script>
+    </body>
+</html>

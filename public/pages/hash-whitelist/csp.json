@@ -1,0 +1,10 @@
+{
+    "policies": {
+        "script-src": [
+            "'sha256-QHeH0FhwOhzHXe2n672JuExZuDDZ0aj6gft61sMWSUs='",
+            "cdn.walkme.com",
+            "'unsafe-inline'",
+            "d3sbxpiag177w8.cloudfront.net"
+        ]
+    }
+}

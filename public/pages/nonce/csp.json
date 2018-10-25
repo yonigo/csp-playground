@@ -1,0 +1,7 @@
+{
+    "policies": {
+        "script-src": [
+            "'nonce-bm9uY2U='"
+        ]
+    }
+}

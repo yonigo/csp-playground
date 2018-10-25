@@ -1,0 +1,8 @@
+{
+    "policies": {
+        "script-src": [
+            "'sha256-V8r6IJx8wLKsTgyzJck9Bj6bZEj/gdgLYaGvOIJKuQI='",
+            "'strict-dynamic'"
+        ]
+    }
+}

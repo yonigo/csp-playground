@@ -1,0 +1,11 @@
+{
+    "policies": {
+        "script-src": [
+            "'nonce-bm9uY2U='",
+            "'strict-dynamic'",
+            "'unsafe-inline'",
+            "cdn.walkme.com",
+            "d3sbxpiag177w8.cloudfront.net"
+        ]
+    }
+}
