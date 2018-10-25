@@ -1,10 +1,34 @@
-# express-static-boilerplate
+# csp-playground
 
-Just a simple `express.js` boilerplate here. Designed to serve static content from the `public` directory, and that's about it! Some sensible middlewares are also included and enabled by default, to get you started quickly with single-page app development or whatever.
+Small Express server to server different CSP headers.
 
-How to get started:
+This server dynamically addes all folders under public/pages/<page-name> to the index file.
+Then you can specify csp policy for each page
 
-1. Clone it
-2. `npm install`
-3. `npm start` OR start the server with a long-running daemon like `supervisor` or `nodemon`
-4. Rejoice!
+##usage
+
+clone
+npm /yarn install
+run npm start from project root
+
+## Adding pages
+
+1. Create a new folder named <page-name> under public/pages
+2. Add an index.html file in the new folder
+3. Add a csp.json file that describes the csp response header the server will reply with the request
+
+### CSP format:
+
+The csp.json contains an object with the required policies. This will be served directly into the [csp-header](https://www.npmjs.com/package/csp-header) middleware
+
+```javascript
+{
+    "policies": {
+        "script-src": [
+            "'nonce-bm9uY2U='"
+        ]
+    }
+}
+```
+
+
