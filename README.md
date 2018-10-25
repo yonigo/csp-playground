@@ -5,7 +5,7 @@ Small Express server to server different CSP headers.
 This server dynamically addes all folders under public/pages/<page-name> to the index file.
 Then you can specify csp policy for each page
 
-##usage
+## usage
 
 clone
 npm /yarn install
